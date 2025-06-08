@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Søk etter fag</title>
+  <style>
+    body { font-family: 'Roboto', Arial, sans-serif; margin:2em;}
+    h2 { font-family: 'Oswald', Arial, sans-serif; letter-spacing: 1px; }
+    input { width: 95%; padding: 1em; font-size: 1.2em; }
+    ul { list-style: none; padding: 0; }
+    li { margin: 1em 0; background: #f6f6f6; padding: 1em; border-radius: 8px; }
+    .ingen { color: #888; margin-top:2em;}
+  </style>
+</head>
+<body>
+  <h2>Søk etter fag eller kode</h2>
+  <input type="text" id="sok" placeholder="Skriv fag, kode eller eksamensform..." disabled>
+  <div id="laster">Laster inn fagliste...</div>
+  <ul id="resultat"></ul>
+  <div class="ingen" id="ingen" style="display:none;">Ingen treff - prøv et annet søkeord!</div>
+ 
+ <script>
+    // Sett inn din "raw" CSV-link under
+    const csvUrl = "https://raw.githubusercontent.com/43jakchr/Fagkode/refs/heads/main/Kode%20med%20sheet/FAGKODER.CSV";
+
+    let fagkoder = [];
+    let dataErLastet = false;
+
+    // Hjelpefunksjon for å parse CSV (kun for "rene" CSV-filer)
+    function parseCSV(csvText) {
+      const lines = csvText.trim().split('\n');
+      const headers = lines[0].split(',').map(h => h.trim());
+      return lines.slice(1).map(line => {
+        const values = line.split(',').map(v => v.trim());
+        let obj = {};
+        headers.forEach((h, i) => obj[h] = values[i] || '');
+        return obj;
+      });
+    }
+
+    // Hent og parse CSV
+    fetch(csvUrl)
+      .then(res => {
+        if (!res.ok) throw new Error("Kunne ikke laste filen.");
+        return res.text();
+      })
+      .then(csvText => {
+        fagkoder = parseCSV(csvText);
+        dataErLastet = true;
+        document.getElementById("laster").style.display = "none";
+        document.getElementById("sok").disabled = false;
+      })
+      .catch(err => {
+        document.getElementById("laster").textContent = "Kunne ikke laste faglisten!";
+      });
+
+    function visResultat() {
+      if (!dataErLastet) return;
+      const s = document.getElementById("sok").value.trim().toLowerCase();
+      const resultatElem = document.getElementById("resultat");
+      const ingenElem = document.getElementById("ingen");
+      if (!s) {
+        resultatElem.innerHTML = "";
+        ingenElem.style.display = "none";
+        return;
+      }
+      const treff = fagkoder.filter(f =>
+        (f.fag && f.fag.toLowerCase().includes(s)) ||
+        (f.muntlig && f.muntlig.toLowerCase().includes(s)) ||
+        (f.skriftlig1 && f.skriftlig1.toLowerCase().includes(s)) ||
+        (f.skriftlig2 && f.skriftlig2.toLowerCase().includes(s)) ||
+        (f.dato1 && f.dato1.toLowerCase().includes(s)) ||
+        (f.dato2 && f.dato2.toLowerCase().includes(s))
+      );
+      resultatElem.innerHTML = treff.map(f =>
+        `<li>
+          <strong>${f.fag}</strong><br>
+          ${f.muntlig ? "Muntlig: <b>" + f.muntlig + "</b><br>" : ""}
+          ${f.skriftlig1 ? "Skriftlig: <b>" + f.skriftlig1 + "</b>" + (f.dato1 ? " - eksamensdato: <b>" + f.dato1 + "</b>" : "") + "<br>" : ""}
+          ${f.skriftlig2 ? "Skriftlig: <b>" + f.skriftlig2 + "</b>" + (f.dato2 ? " - eksamensdato: <b>" + f.dato2 + "</b>" : "") : ""}
+        </li>`
+      ).join("");
+      ingenElem.style.display = treff.length ? "none" : "block";
+    }
+    document.getElementById("sok").addEventListener("input", visResultat);
+  </script>
+</body>
+</html>
