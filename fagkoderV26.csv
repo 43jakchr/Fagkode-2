@@ -1,59 +1,59 @@
-fag,muntlig,skriftlig1,dato1,skriftlig2,dato2
-Biologi 1,REA3035,,,,
-Biologi 2,REA3037,REA3036,tor. 7.mai,,
-Engelsk vg1,ENG1008,ENG1007,ons. 20.mai,,
-Engelsk 1 Programfag,SPR3030,SPR3029,ons. 20.mai,,
-Engelsk 2 Programfag,SPR3032,SPR3031,ons. 6.mai,,
-Fransk l Fellesfag,FSP6150,FSP6149,man. 17.november,,
-Fransk l Programfag,PSP5797,PSP5796,man. 17.november,,
-Fransk ll Fellesfag,FSP6153,FSP6152,tir. 18.november,,
-Fransk ll Programfag,PSP5799,PSP5798,tir. 18.november,,
-Fransk lll Programfag,PSP5801,PSP5800,ons. 19.november,,
-Fysikk 1,REA3038,,,,
-Fysikk 2,REA3040,REA3039,fre. 28.november,,
-Geofag 1,REA3042,,,,
-Geofag 2,REA3044,REA3043,ons. 19.november,,
-Geografi,GEO1003,,,,
-Historie påbygg,HIS1011,,,,
-Historie vg3 (studiespes),HIS1010,,,,
-Kjemi 1,REA3045,,,,
-Kjemi 2,REA3047,REA3046,man. 24.november,,
-Kroppsøving vg3,KRO1019,,,,
-Markedsføring og ledelse 1,SAM3045,,,,
-Markedsføring og ledelse 2,,SAM3046,,,
-Matematikk 1P,,MAT1019,fre. 28.november,,
-Matematikk 1PY HS,,MAT1117,fre. 28.november,,
-Matematikk 1T,,MAT1021,fre. 28.november,,
-Matematikk 2P,,MAT1023,tir. 25.november,,
-Matematikk 2PY,,MAT1151,tir. 25.november,,
-Matematikk R1,,REA3056,tor. 20.november,,
-Matematikk R2,,REA3058,man. 17.november,,
-Matematikk S1,,REA3060,tor. 20.november,,
-Matematikk S2,,REA3062,man. 17.november,,
-Medie- og informasjonskunnskap 1,SAM3048,,,,
-Medie- og informasjonskunnskap 2,,SAM3049,ons. 19.november,,
-Naturfag påbygg,NAT1018,,,,
-Naturfag vg1 studiespes,NAT1007,,,,
-Norsk studiespes,NOR1269,NOR1267 - Hovedmål,fre. 21.november,NOR1268 - Sidemål,ons. 26.november
-Norsk påbygg,NOR1272,NOR1270 - Hovedmål,fre. 21.november,NOR1271 - Sidemål,ons. 26.november
-Norsk kort botid påbygg,NOR1423,NOR1422,fre. 21.november,,
-Norsk kort botid studiespes,NOR1421,NOR1420,fre. 21.november,,
-Psykologi 1 ,SAM3072,,,,
-Psykologi 2,,SAM3073,tir. 18.november,,
-Religion,REL1003,,,,
-Rettslære 1,SAM3057,,,,
-Rettslære 2,,SAM3058,tor. 27.november,,
-Samfunnsgeografi,SAM3053,,,,
-Samfunnskunnskap,SAK1001,,,,
-Sosiologi og sosialantropologi,SAM3054,,,,
-Sosialkunnskap,,SAM3051,ons. 19.november,,
-Spansk l fellesfag,FSP6220,FSP6219,man. 17.november,,
-Spansk l programfag,PSP5827,PSP5826,man. 17.november,,
-Spansk ll fellesfag,FSP6223,FSP6222,tir. 18.november,,
-Spansk ll programfag,PSP5829,PSP5828,tir. 18.november,,
-Spansk lll Programfag,PSP5831,PSP5830,ons. 19.november,,
-Tysk I programfag,PSP5839,PSP5838,man. 17.november,,
-Tysk l fellesfag,FSP6240,FSP6239,man. 17.november,,
-Tysk ll fellesfag,FSP6242,FSP6242,tir. 18.november,,
-Tysk ll programfag,PSP5841,PSP5840,tir. 18.november,,
-Tysk lll programfag,PSP5843,PSP5842,ons. 19.november,,
+fag;muntlig;skriftlig1;dato1;skriftlig2;dato2
+Biologi 1;REA3035;;;;
+Biologi 2;REA3037;REA3036;7. mai 2026;;
+Engelsk vg1;ENG1008;ENG1007;20. mai 2026;;
+Engelsk 1 Programfag;SPR3030;SPR3029;20. mai 2026;;
+Engelsk 2 Programfag;SPR3032;SPR3031;6. mai 2026;;
+Fransk l Fellesfag;FSP6150;FSP6149;19. mai 2026;;
+Fransk l Programfag;PSP5797;PSP5796;19. mai 2026;;
+Fransk ll Fellesfag;FSP6153;FSP6152;20. mai 2026;;
+Fransk ll Programfag;PSP5799;PSP5798;20. mai 2026;;
+Fransk lll Programfag;PSP5801;PSP5800;4. mai 2026;;
+Fysikk 1;REA3038;;;;
+Fysikk 2;REA3040;REA3039;8. mai 2026;;
+Geofag 1;REA3042;;;;
+Geofag 2;REA3044;REA3043;12. mai 2026;;
+Geografi;GEO1003;;;;
+Historie påbygg;HIS1011;;;;
+Historie vg3 (studiespes);HIS1010;;;;
+Kjemi 1;REA3045;;;;
+Kjemi 2;REA3047;REA3046;12. mai 2026;;
+Kroppsøving vg3;KRO1019;;;;
+Markedsføring og ledelse 1;SAM3045;;;;
+Markedsføring og ledelse 2;;SAM3046;8. mai 2026;;
+Matematikk 1P;;MAT1019;19. mai 2026;;
+Matematikk 1PY HS;;MAT1117;19. mai 2026;;
+Matematikk 1T;;MAT1021;19. mai 2026;;
+Matematikk 2P;;MAT1023;21. mai 2026;;
+Matematikk 2PY;;MAT1151;21. mai 2026;;
+Matematikk R1;;REA3056;21. mai 2026;;
+Matematikk R2;;REA3058;13. mai 2026;;
+Matematikk S1;;REA3060;21. mai 2026;;
+Matematikk S2;;REA3062;13. mai 2026;;
+Medie- og informasjonskunnskap 1;SAM3048;;;;
+Medie- og informasjonskunnskap 2;;SAM3049;13. mai 2026;;
+Naturfag påbygg;NAT1018;;;;
+Naturfag vg1 studiespes;NAT1007;;;;
+Norsk studiespes;NOR1269;NOR1267 - Hovedmål;5. mai 2026;NOR1268 - Sidemål;11. mai 2026
+Norsk påbygg;NOR1272;NOR1270 - Hovedmål;5. mai 2026;NOR1271 - Sidemål;11. mai 2026
+Norsk kort botid påbygg;NOR1423;NOR1422;5. mai 2026;;
+Norsk kort botid studiespes;NOR1421;NOR1420;5. mai 2026;;
+Psykologi 1 ;SAM3072;;;;
+Psykologi 2;;SAM3073;4. mai 2026;;
+Religion;REL1003;;;;
+Rettslære 1;SAM3057;;;;
+Rettslære 2;;SAM3058;13. mai 2026;;
+Samfunnsgeografi;SAM3053;;;;
+Samfunnskunnskap;SAK1001;;;;
+Sosiologi og sosialantropologi;SAM3054;;;;
+Sosialkunnskap;;SAM3051;6. mai 2026;;
+Spansk l fellesfag;FSP6220;FSP6219;19. mai 2026;;
+Spansk l programfag;PSP5827;PSP5826;19. mai 2026;;
+Spansk ll fellesfag;FSP6223;FSP6222;20. mai 2026;;
+Spansk ll programfag;PSP5829;PSP5828;20. mai 2026;;
+Spansk lll Programfag;PSP5831;PSP5830;4. mai 2026;;
+Tysk I programfag;PSP5839;PSP5838;19. mai 2026;;
+Tysk l fellesfag;FSP6240;FSP6239;19. mai 2026;;
+Tysk ll fellesfag;FSP6242;FSP6242;20. mai 2026;;
+Tysk ll programfag;PSP5841;PSP5840;20. mai 2026;;
+Tysk lll programfag;PSP5843;PSP5842;4. mai 2026;;
