@@ -76,8 +76,8 @@
         `<li>
           <strong>${f.fag}</strong><br>
           ${f.muntlig ? "Muntlig: <b>" + f.muntlig + "</b><br>" : ""}
-          ${f.skriftlig1 ? "Skriftlig: <b>" + f.skriftlig1 + "</b>" + (f.dato1 ? " - eksamensdato: <b>" + f.dato1 + "</b>" : "") + "<br>" : ""}
-          ${f.skriftlig2 ? "Skriftlig: <b>" + f.skriftlig2 + "</b>" + (f.dato2 ? " - eksamensdato: <b>" + f.dato2 + "</b>" : "") : ""}
+          ${f.skriftlig1 ? "Skriftlig: <b>" + f.skriftlig1 + "</b>" + (f.dato1 ? " - Eksamensdato: <b>" + f.dato1 + "</b>" : "") + "<br>" : ""}
+          ${f.skriftlig2 ? "Skriftlig: <b>" + f.skriftlig2 + "</b>" + (f.dato2 ? " - Eksamensdato: <b>" + f.dato2 + "</b>" : "") : ""}
         </li>`
       ).join("");
       ingenElem.style.display = treff.length ? "none" : "block";
